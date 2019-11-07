@@ -18,4 +18,6 @@ class TestBasics(unittest.TestCase):
     def exponentiate(self):
         result = rpn.calculate("2 3 ^")
         self.assertEqual(8, result)
-
+    def mod(self):
+        result = rpn.calculate("5 3 %")
+        self.assertEqual(2, result)
